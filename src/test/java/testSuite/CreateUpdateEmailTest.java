@@ -21,11 +21,13 @@ public class CreateUpdateEmailTest extends BaseTestTodoLy {
         profileSection.changeEmail(newEmail);
         Alert alert = Session.getInstance().getBrowser().switchTo().alert();
         alert.accept();
-
+        Thread.sleep(2000);
         mainPage.loginButton.click();
         loginSection.login(newEmail, "12345");
 
         Assertions.assertTrue(menuSection.logoutButton.isControlDislayed(),
                 "ERROR! The full name was not updated correctly");
     }
+
+
 }
