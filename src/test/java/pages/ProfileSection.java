@@ -6,16 +6,13 @@ import org.openqa.selenium.By;
 
 public class ProfileSection {
 
-    public TextBox fullNameInput = new TextBox(By.id("FullNameInput"));
+    public TextBox emailInput = new TextBox(By.xpath("//input[@id='EmailInput']"));
     public Button okProfileButton = new Button(By.xpath("//button[span[text()='Ok']]"));
 
-    public void changeFullName(String fullName){
-        this.fullNameInput.clearSetText(fullName);
+    public void changeEmail(String email){
+        this.emailInput.clearSetText(email);
         this.okProfileButton.click();
     }
 
 
-    public String getFullName() {
-        return this.fullNameInput.getText();
-    }
 }

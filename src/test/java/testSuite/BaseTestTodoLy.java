@@ -9,9 +9,10 @@ public class BaseTestTodoLy {
 
     MainPage mainPage = new MainPage();
     SignUpFormSection signUpFormSection = new SignUpFormSection();
-//    protected LoginSection loginSection = new LoginSection();
-//    protected MenuSection menuSection = new MenuSection();
-//    protected SettingsSection settingsSection = new SettingsSection();
+    ProfileSection profileSection = new ProfileSection();
+    LoginSection loginSection = new LoginSection();
+    MenuSection menuSection = new MenuSection();
+    SettingsSection settingsSection = new SettingsSection();
 
     @BeforeEach
     public void openBrowser(){

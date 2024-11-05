@@ -16,7 +16,9 @@ public class SignUpFormSection {
     public void signUp(String fullName, String email, String pwd){
         this.fullNameTxtBox.setText(fullName);
         this.emailTxtBox.setText(email);
-        this.emailTxtBox.setText(email);
+        this.pwdTxtBox.setText(pwd);
+        this.checkButton.click();
+        this.signUpButton.click();
     }
 
 }
